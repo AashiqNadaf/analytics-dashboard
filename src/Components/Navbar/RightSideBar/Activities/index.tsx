@@ -51,6 +51,7 @@ const Activities = () => {
             />
           ))}
     </div>
+
   );
 };
 
