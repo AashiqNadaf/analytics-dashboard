@@ -41,13 +41,13 @@
 }
 
 .ant-input {
-  background-color: var(--modal-bg) !important;
+  background-color: var(--active-bg) !important;
   border-color: var(--modal-border) !important;
   color: var(--modal-text) !important;
 }
 
 .ant-input.css-dev-only-do-not-override-1odpy5d {
-  background-color: var(--modal-bg) !important;
+  background-color: var(--active-bg) !important;
   border-color: var(--modal-border) !important;
   color: var(--modal-text) !important;
 }
