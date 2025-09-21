@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+
+.custom-input input::placeholder {
+  color: var(--placeholder-color) !important;
+}
