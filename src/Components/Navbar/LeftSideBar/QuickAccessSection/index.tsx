@@ -60,7 +60,12 @@ const QuickAccessSection = () => {
                     style={{ backgroundColor: theme.tertiaryText }}
                   />
                 </div>
-                <span className="text-sm font-medium">{trimRoute(route)}</span>
+                <span
+                  className="text-sm font-medium"
+                  style={{ color: theme.text }}
+                >
+                  {trimRoute(route)}
+                </span>
               </div>
             </div>
           ))}
@@ -77,7 +82,12 @@ const QuickAccessSection = () => {
                     style={{ backgroundColor: theme.tertiaryText }}
                   />
                 </div>
-                <span className="text-sm font-medium">{trimRoute(route)}</span>
+                <span
+                  className="text-sm font-medium"
+                  style={{ color: theme.text }}
+                >
+                  {trimRoute(route)}
+                </span>
               </div>
             </div>
           ))}
