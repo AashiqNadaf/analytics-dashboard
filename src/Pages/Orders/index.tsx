@@ -54,13 +54,15 @@ const Orders = () => {
     addOrder(newOrder);
   }, []);
 
-  const handleFilterApply = useCallback((filters: { dateRange?: [Dayjs, Dayjs] }) => {
-    applyFilters(filters);
-  }, []);
-
+  const handleFilterApply = useCallback(
+    (filters: { dateRange?: [Dayjs, Dayjs] }) => {
+      applyFilters(filters);
+    },
+    []
+  );
 
   return (
-    <div className="w-full h-full flex flex-col gap-4 p-2">
+    <div className="w-full flex flex-col gap-4 p-2">
       <div
         className="w-full h-[28px] flex justify-start items-center px-2 text-sm font-semibold"
         style={{ color: theme.text }}
@@ -97,7 +99,7 @@ const Orders = () => {
             prefix={
               <Icon
                 lightThemeIcon={DarkSearchIcon}
-                darkThemeIcon={ LightSearchIcon}
+                darkThemeIcon={LightSearchIcon}
                 className="w-5 h-5"
               />
             }
@@ -108,7 +110,7 @@ const Orders = () => {
         </div>
       </div>
 
-      <div className="flex-1 overflow-hidden">
+      <div className="w-full">
         <OrdersTable orders={orders} loading={loading} />
       </div>
 
