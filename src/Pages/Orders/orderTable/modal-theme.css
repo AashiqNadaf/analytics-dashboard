@@ -1,0 +1,112 @@
+/* Modal Theme Styling */
+.ant-modal-content {
+  background-color: var(--modal-bg) !important;
+  color: var(--modal-text) !important;
+}
+
+.ant-modal-header {
+  background-color: var(--modal-bg) !important;
+  border-bottom: 1px solid var(--modal-border) !important;
+}
+
+.ant-modal-title {
+  color: var(--modal-text) !important;
+}
+
+.ant-modal-close {
+  color: var(--modal-text) !important;
+}
+
+.ant-modal-close:hover {
+  color: var(--modal-text-hover) !important;
+}
+
+.ant-modal-footer {
+  background-color: var(--modal-bg) !important;
+  border-top: 1px solid var(--modal-border) !important;
+}
+
+.ant-select-selector {
+  background-color: var(--modal-bg) !important;
+  border-color: var(--modal-border) !important;
+  color: var(--modal-text) !important;
+}
+
+.ant-select-selection-item {
+  color: var(--modal-text) !important;
+}
+
+.ant-select-selection-placeholder {
+  color: var(--modal-placeholder) !important;
+}
+
+.ant-input {
+  background-color: var(--modal-bg) !important;
+  border-color: var(--modal-border) !important;
+  color: var(--modal-text) !important;
+}
+
+.ant-input.css-dev-only-do-not-override-1odpy5d {
+  background-color: var(--modal-bg) !important;
+  border-color: var(--modal-border) !important;
+  color: var(--modal-text) !important;
+}
+
+.ant-input::placeholder {
+  color: var(--modal-placeholder) !important;
+}
+
+.ant-input {
+  color: var(--modal-placeholder) !important;
+}
+
+.ant-picker {
+  background-color: var(--modal-bg) !important;
+  border-color: var(--modal-border) !important;
+  color: var(--modal-text) !important;
+}
+
+.ant-picker-input > input {
+  background-color: var(--modal-bg) !important;
+  color: var(--modal-text) !important;
+}
+
+.ant-picker-input > input::placeholder {
+  color: var(--modal-placeholder) !important;
+}
+
+.ant-picker-suffix {
+  color: var(--modal-text) !important;
+}
+
+.ant-picker-clear {
+  color: var(--modal-text) !important;
+}
+
+.ant-picker-clear:hover {
+  color: var(--modal-text-hover) !important;
+}
+
+.ant-btn {
+  background-color: var(--modal-btn-bg) !important;
+  border-color: var(--modal-btn-border) !important;
+  color: var(--modal-btn-text) !important;
+}
+
+.ant-btn-primary {
+  background-color: var(--modal-primary-bg) !important;
+  border-color: var(--modal-primary-bg) !important;
+  color: var(--modal-primary-text) !important;
+}
+
+.ant-btn:hover {
+  background-color: var(--modal-btn-hover-bg) !important;
+  border-color: var(--modal-btn-hover-border) !important;
+  color: var(--modal-btn-hover-text) !important;
+}
+
+.ant-btn-primary:hover {
+  background-color: var(--modal-primary-hover-bg) !important;
+  border-color: var(--modal-primary-hover-bg) !important;
+  color: var(--modal-primary-hover-text) !important;
+}

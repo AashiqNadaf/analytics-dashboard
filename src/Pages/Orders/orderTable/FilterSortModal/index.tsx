@@ -1,9 +1,10 @@
-import React, { useState, memo } from 'react';
+import React, { useState, memo, useEffect } from 'react';
 import { Modal, Button, DatePicker } from 'antd';
 import { useThemeStore } from '../../../../Store/themeStore';
 import type { FilterSortModalProps } from './interface';
 import { MODAL_CONFIG, DEFAULT_FILTERS } from './constants';
 import type { Dayjs } from 'dayjs';
+import '../modal-theme.css';
 
 const { RangePicker } = DatePicker;
 
@@ -14,6 +15,25 @@ const FilterSortModal: React.FC<FilterSortModalProps> = ({
 }) => {
   const { theme } = useThemeStore();
   const [filters, setFilters] = useState(DEFAULT_FILTERS);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    root.style.setProperty('--modal-bg', theme.background);
+    root.style.setProperty('--modal-text', theme.text);
+    root.style.setProperty('--modal-border', theme.border);
+    root.style.setProperty('--modal-placeholder', theme.placeholder);
+    root.style.setProperty('--modal-text-hover', theme.secondaryText);
+    root.style.setProperty('--modal-btn-bg', theme.itemActiveBg);
+    root.style.setProperty('--modal-btn-border', theme.border);
+    root.style.setProperty('--modal-btn-text', theme.text);
+    root.style.setProperty('--modal-primary-bg', theme.primary);
+    root.style.setProperty('--modal-primary-text', theme.text);
+    root.style.setProperty('--modal-btn-hover-bg', theme.itemActiveBg);
+    root.style.setProperty('--modal-btn-hover-border', theme.border);
+    root.style.setProperty('--modal-btn-hover-text', theme.text);
+    root.style.setProperty('--modal-primary-hover-bg', theme.primary);
+    root.style.setProperty('--modal-primary-hover-text', theme.text);
+  }, [theme]);
 
   const handleApply = () => {
     onApply(filters);
@@ -55,6 +75,9 @@ const FilterSortModal: React.FC<FilterSortModalProps> = ({
       bodyStyle={{
         backgroundColor: theme.background,
         color: theme.text,
+      }}
+      maskStyle={{
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
       }}
       width={MODAL_CONFIG.width}
     >
