@@ -22,7 +22,14 @@ const Card: React.FC<CardProps> = ({
   return (
     <div
       className="w-full h-[112px] rounded-2xl flex flex-col gap-2 p-4 sm:p-6"
-      style={{ backgroundColor }}
+      style={{
+        backgroundColor:
+          theme.currentTheme === 'dark'
+            ? title === 'Orders' || title === 'Revenue'
+              ? '#FFFFFF0D'
+              : backgroundColor
+            : backgroundColor,
+      }}
     >
       <div
         className="w-full h-[20px] flex justify-start items-center text-sm font-semibold"

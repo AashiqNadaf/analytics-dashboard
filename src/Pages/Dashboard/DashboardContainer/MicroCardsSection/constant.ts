@@ -10,13 +10,13 @@ export const microCardsSectionData: MicroCardsSectionDATA[] = [
   {
     title: 'Orders',
     value: '1219',
-    backgroundColor: '#FFFFFF0D',
+    backgroundColor: '#F7F9FB',
     percentage: -0.5,
   },
   {
     title: 'Revenue',
     value: '695.20',
-    backgroundColor: '#FFFFFF0D',
+    backgroundColor: '#F7F9FB',
     percentage: 15.98,
   },
   {
